@@ -10,7 +10,6 @@ local Humanoid = Character:FindFirstChildOfClass("Humanoid")
 
 local StaminaOut = {
 	"I'm exhausted.",
-	"I feel weak.",
 	"I don't want to run.",
 	"I'm tired."
 }
@@ -19,6 +18,7 @@ local TS = game:GetService("TweenService")
 
 local MainSprintUI = game:GetObjects("rbxassetid://92619396678725")[1]
 MainSprintUI.Parent = game.Players.LocalPlayer.PlayerGui.Main
+MainSprintUI.TextLabel.Text = "STAMINA"
 print("Stamina Loaded")
 if not MainSprintUI.Visible then MainSprintUI.Visible = true end
 game:GetService("RunService").RenderStepped:Connect(function()
