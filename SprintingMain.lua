@@ -16,9 +16,11 @@ local StaminaOut = {
 
 local TS = game:GetService("TweenService")
 
-local MainSprintUI = game:GetObjects("rbxassetid://92619396678725")[1]
+local MainSprintUI = _G.models.Sprint:Clone()
 MainSprintUI.Parent = game.Players.LocalPlayer.PlayerGui.Main
 MainSprintUI.TextLabel.Text = "STAMINA"
+MainSprintUI.Frame.Outer.HpTrade.Visible = false
+
 print("Stamina Loaded")
 if not MainSprintUI.Visible then MainSprintUI.Visible = true end
 game:GetService("RunService").RenderStepped:Connect(function()
