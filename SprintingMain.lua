@@ -19,7 +19,7 @@ local TS = game:GetService("TweenService")
 local MainSprintUI = _G.models.Sprint:Clone()
 MainSprintUI.Parent = game.Players.LocalPlayer.PlayerGui.Main
 MainSprintUI.TextLabel.Text = "STAMINA"
-MainSprintUI.Frame.Outer.HpTrade.Visible = false
+MainSprintUI.Outer.HpTrade.Visible = false
 
 print("Stamina Loaded")
 if not MainSprintUI.Visible then MainSprintUI.Visible = true end
